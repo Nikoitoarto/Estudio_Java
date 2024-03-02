@@ -34,6 +34,8 @@ public class SistemasNumericosConsole {
 
         System.out.println(mensaje);
 
+        System.out.println("Nikolas ardila es = " + mensaje);
+
 
         
         
