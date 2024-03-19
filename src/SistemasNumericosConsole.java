@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SistemasNumericosConsole {
@@ -6,12 +7,13 @@ public class SistemasNumericosConsole {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese un número entero");
-        String numeroStr = scanner.nextLine();
+        //String numeroStr = scanner.nextLine();
         int numeroDecimal= 0;
 
         try {
-            numeroDecimal = Integer.parseInt(numeroStr);//esta linea se hace para convertir el valor de tipo String a Númerico o INT
-        } catch (NumberFormatException e){
+            //Integer.parseInt(numeroStr) para convertir el numero a entero
+            numeroDecimal = scanner.nextInt();//esta line se encarga en convertir directamente a entero sin necesidad del parseint
+        } catch (InputMismatchException e){//esta es la excepcion de el scanner de arriba
             System.out.println("Error debe ingresar un número");
             main(args);
             System.exit(0);
@@ -24,7 +26,6 @@ public class SistemasNumericosConsole {
         String mensajeOctal = "Numero octal de  = " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
 
         String mensajeHexa = "numero hexadecimal de = " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
-
 
         //////////////////////////////
 

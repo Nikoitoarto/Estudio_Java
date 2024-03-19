@@ -14,7 +14,6 @@ public class SistemasNumericos {
             main(args);
             System.exit(0);
         }
-
         System.out.println("numeroDecimal = " + numeroDecimal);
 
         ///////////////////////
