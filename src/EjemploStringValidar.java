@@ -1,3 +1,5 @@
+import javax.sound.midi.Soundbank;
+
 public class EjemploStringValidar {
     public static void main(String[] args) {
 
@@ -8,18 +10,21 @@ public class EjemploStringValidar {
         System.out.println("esNulo = " + esNulo);
 
         if(esNulo) {
-            curso = "";
+            curso = "programacion Java";
         }
 
         boolean esVacio = curso.length() == 0;
 
-        if(esVacio == false){
+        System.out.println("esVacio = " + esVacio);
+
+        boolean esVacio2 = curso.isEmpty();
+
+        System.out.println("esVacio2 = " + esVacio2);
+
+        if(!curso.isEmpty()){
             System.out.println(curso.toUpperCase());
             System.out.println("Bienvenido al ".concat(curso));
 
         }
-
-
-
     }
 }
