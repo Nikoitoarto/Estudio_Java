@@ -1,3 +1,5 @@
+package progOrientObject;
+
 public class InterfacesClass {
 
     public static void main(String[] args) {

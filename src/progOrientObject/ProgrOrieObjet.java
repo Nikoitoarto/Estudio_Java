@@ -1,3 +1,5 @@
+package progOrientObject;
+
 import java.util.Scanner;
 
 public class ProgrOrieObjet  {
